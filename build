@@ -1,0 +1,4 @@
+#!/bin/bash
+
+concat -o ./src/fsm.js ./src/statemachine.js ./src/state.js ./src/export.js
+browserify index.js --s clinamenfsm > ./dist/clinamen-fsm.js
