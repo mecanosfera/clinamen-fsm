@@ -1,6 +1,6 @@
 {
   "name": "clinamen-fsm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Implementation of a simple Finite State Machine in javascript.",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,5 @@
     "url": "https://github.com/mecanosfera/clinamen-fsm/issues"
   },
   "homepage": "https://github.com/mecanosfera/clinamen-fsm#readme",
-  "devDependencies": {
-
-  }
+  "devDependencies": {}
 }
