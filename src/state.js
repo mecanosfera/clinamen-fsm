@@ -1,7 +1,7 @@
 class State {
 
   constructor(...args){
-    init(args);
+    this.init(args);
   }
 
   init(args){

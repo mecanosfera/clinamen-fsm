@@ -1,15 +1,17 @@
 class StateMachine {
 
   constructor(args){
-    init(args);
+    this.init(args);
   }
 
   init(args){
     this.states = {};
-    this.state = "";
+    this.state = null;
     if(args.states){
       this.states = args.states;
-      start(args.initialState);
+      if(args.initialState){
+        start(args.initialState);
+      }
     }
 
   }

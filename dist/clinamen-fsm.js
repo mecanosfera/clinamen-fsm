@@ -5,15 +5,17 @@ module.exports = require('./src/fsm.js');
 class StateMachine {
 
   constructor(args){
-    init(args);
+    this.init(args);
   }
 
   init(args){
     this.states = {};
-    this.state = "";
+    this.state = null;
     if(args.states){
       this.states = args.states;
-      start(args.initialState);
+      if(args.initialState){
+        start(args.initialState);
+      }
     }
 
   }
@@ -53,7 +55,7 @@ class StateMachine {
 class State {
 
   constructor(...args){
-    init(args);
+    this.init(args);
   }
 
   init(args){
