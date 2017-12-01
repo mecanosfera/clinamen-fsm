@@ -1,6 +1,6 @@
 {
   "name": "clinamen-fsm",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Implementation of a simple Finite State Machine in javascript.",
   "main": "index.js",
   "scripts": {
