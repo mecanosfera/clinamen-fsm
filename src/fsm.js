@@ -57,9 +57,7 @@ class State {
     this.init(args);
   }
 
-  init(args){
-    this.name = args[0];
-  }
+  init(args){}
 
   enter(lastStateName){}
 
