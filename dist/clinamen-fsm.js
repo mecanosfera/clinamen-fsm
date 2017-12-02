@@ -11,7 +11,7 @@ class StateMachine {
   init(args){
     this.states = {};
     this.state = null;
-    if(args.states){
+    if(args && args.states){
       this.states = args.states;
       if(args.initialState){
         start(args.initialState);
@@ -38,7 +38,7 @@ class StateMachine {
   }
 
   add(newState){
-    this.states[newState.name] = newstate;
+    this.states[newState.name] = newState;
   }
 
   update(args){
