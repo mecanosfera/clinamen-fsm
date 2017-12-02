@@ -29,8 +29,8 @@ class StateMachine {
 
   change(newStateName){
     var lastStateName = null;
-    if(state){
-      lastStateName = state.name;
+    if(this.state){
+      lastStateName = this.state.name;
       this.state.exit(newStateName);
     }
     this.state = this.states[newStateName];
